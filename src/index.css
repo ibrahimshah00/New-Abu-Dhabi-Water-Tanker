@@ -11,7 +11,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #215ece;
+    background-color: #0d1b2a;
     padding: 10px 20px;
   }
   
@@ -97,6 +97,65 @@
 
 
 
+/* 
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:50px 120px;
+    
+    background: linear-gradient(135deg, #0d2035 50%, #436f98 100%);
+  }
+  
+  .hero-content {
+    font-family: 'Nunito' ;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .hero-content h1 {
+    font-size: 48px;
+    color: #ffc700;
+  }
+  
+  .hero-content p {
+    font-family: 'Nunito';
+    margin: 20px 0;
+    font-size: 18px;
+    color: #ffffff;
+  }
+  
+  .hero-content a{
+    text-decoration: none;
+  }
+  .call-now  a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    
+  }
+  .call-now {
+    background-color: #ffc700;
+    display: flex;
+    justify-content: center;
+    color: #011627;
+    border: none;
+    padding: 13px 197px;
+    font-size: 22px;
+    border-radius: 13px;
+    margin: 9px 7px;
+    text-decoration: none;
+  }
+  
+  .hero-image img {
+    max-width: 500px;
+   
+  } */
+
+
 
 
 
@@ -108,7 +167,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 50px 120px;
-    background: linear-gradient(135deg, #5686df 50%, #436f98 100%);
+    background: linear-gradient(135deg, #0d2035 50%, #436f98 100%);
   }
   
   /* Content Section */
@@ -198,7 +257,7 @@
   .services-container {
     display: flex;
     justify-content: space-around;
-    background-color: #5686df;
+    background-color: #00172F;
     padding: 50px 0;
     flex-wrap: wrap; /* Allows the cards to wrap on smaller screens */
     gap: 20px; /* Adds space between the cards */
@@ -206,7 +265,7 @@
   
   /* Service Card Styling */
   .service-card {
-    background-color: #3168ce;
+    background-color: #05294f;
     width: 390px;
     padding: 30px;
     text-align: center;
@@ -297,7 +356,7 @@
   flex-direction: column; /* Stack the image, heading, and text in a column */
   justify-content: center;
   align-items: center;
-  background-color: #4c80e1;
+  background-color: #0c314a;
 }
 
 /* Image Section */
@@ -478,7 +537,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #3770db; /* Dark blue background */
+    background-color: #0f1a30; /* Dark blue background */
     padding: 100px;
     flex-wrap: wrap; /* Allows the items to wrap on smaller screens */
   }
@@ -560,7 +619,7 @@
     .info-item {
       flex-direction: column; /* Stack the icon, heading, and text vertically */
       border-right: none; /* Remove the right border */
-      border-bottom: 1px solid #3770db;
+      border-bottom: 1px solid #16405c;
       margin: 0 20px;
       padding-bottom: 20px;
     }
@@ -643,12 +702,195 @@
 
 
 
+/* 
+
+
+.tanker-page-container {
+    background-color: #0c314a; 
+    color: white;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .tanker-page-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .tanker-page-header p {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+  }
+  
+  .tanker-card-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 0px 220px;
+  }
+  
+  .tanker-card {
+    background-color: #0f1a30;
+    border: 1px solid #1d3557;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 900px;
+    height: 450px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+  }
+  
+  .callcard
+  {
+    border-radius: 20px;
+    font-size: 16px;
+    margin-top: 20px;
+   padding: 5px 20px;
+   color: rgb(84, 84, 84);
+   background-color: #f5c518;
+    text-decoration: none;
+  }
+  
+  .tanker-card:hover {
+    transform: scale(1.05); 
+  }
+  
+  .tanker-image {
+    width: 100%;
+    height: 240px;
+    border-bottom: 2px solid #1d3557;
+  }
+  
+  .tanker-card-content {
+    padding: 5px 20px;
+    text-align: left;
+  }
+  
+  .tanker-card-content h3 {
+    font-size: 22px;
+    margin-bottom: 0px;
+  }
+  
+  .tanker-card-content p {
+    font-size: 13px;
+    margin-bottom:  15px;
+    line-height: 1.6;
+  }
+  
+  .call-now-btn {
+    background-color: #f9c72f;
+    color: #0f1a30;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .call-now-btn:hover {
+    background-color: #f1b022;
+  }
+
+
+
+.tanker-page-container {
+  background-color: #0c314a; 
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+.tanker-page-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.tanker-page-header p {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+
+.tanker-card-container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 0px 220px;
+}
+
+.tanker-card {
+  background-color: #0f1a30;
+  border: 1px solid #1d3557;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 900px;
+  height: 450px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.callcard
+{
+  border-radius: 20px;
+  font-size: 16px;
+  margin-top: 20px;
+ padding: 5px 20px;
+ color: rgb(84, 84, 84);
+ background-color: #f5c518;
+  text-decoration: none;
+}
+
+.tanker-card:hover {
+  transform: scale(1.05); 
+}
+
+.tanker-image {
+  width: 100%;
+  height: 240px;
+  border-bottom: 2px solid #1d3557;
+}
+
+.tanker-card-content {
+  padding: 5px 20px;
+  text-align: left;
+}
+
+.tanker-card-content h3 {
+  font-size: 22px;
+  margin-bottom: 0px;
+}
+
+.tanker-card-content p {
+  font-size: 13px;
+  margin-bottom:  15px;
+  line-height: 1.6;
+}
+
+.call-now-btn {
+  background-color: #f9c72f;
+  color: #0f1a30;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.call-now-btn:hover {
+  background-color: #f1b022;
+}
+   */
+
+
    
 
 
 
    .tanker-page-container {
-    background-color: #487bda; /* Dark blue background */
+    background-color: #0c314a; /* Dark blue background */
     color: white;
     padding: 40px;
     text-align: center;
@@ -677,7 +919,7 @@
 
 /* Individual tanker card */
 .tanker-card {
-    background-color: #1f62df; /* Match background with page */
+    background-color: #0f1a30; /* Match background with page */
     border: 1px solid #1d3557;
     border-radius: 8px;
     overflow: hidden;

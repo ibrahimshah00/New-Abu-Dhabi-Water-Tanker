@@ -1,0 +1,848 @@
+
+   /* General Styles */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #215ece;
+    padding: 10px 20px;
+  }
+  
+  .logo img {
+    height: 80px;
+    width: 80px;
+  }
+  
+  /* Desktop Navigation */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  
+  .othernav {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .othernav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Mobile Styles */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+  }
+  
+  /* Drawer for Mobile Menu */
+  .nav-links.open {
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #0d1b2a;
+    width: 100%;
+    text-align: right;
+    padding: 20px 40px;
+  }
+  
+  .nav-links li {
+    margin: 10px 0;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .logo {
+      margin-left: 20px;
+    }
+  
+    /* Hide regular menu and show hamburger on mobile */
+    .nav-links {
+      display: none;
+      flex-direction: column;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  
+    .othernav {
+      display: none;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+  /* Hero Section Styles */
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 120px;
+    background: linear-gradient(135deg, #5686df 50%, #436f98 100%);
+  }
+  
+  /* Content Section */
+  .hero-content {
+    font-family: 'Nunito';
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .hero-content h1 {
+    font-size: 48px;
+    color: #ffc700;
+  }
+  
+  .hero-content p {
+    font-family: 'Nunito';
+    margin: 20px 0;
+    font-size: 18px;
+    color: #ffffff;
+  }
+  
+  .hero-content a {
+    text-decoration: none;
+  }
+  
+  /* Call Now Button */
+  .call-now {
+    background-color: #ffc700;
+    display: flex;
+    justify-content: center;
+    color: #011627;
+    border: none;
+    padding: 13px 197px;
+    font-size: 22px;
+    border-radius: 13px;
+    margin: 9px 7px;
+    text-decoration: none;
+  }
+  
+  /* Hero Image */
+  .hero-image img {
+    max-width: 500px;
+  }
+  
+  /* Media Queries for Responsive Layout */
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      padding: 30px 20px;
+      text-align: center;
+    }
+  
+    .hero-content {
+      max-width: 100%;
+    }
+  
+    .hero-content h1 {
+      font-size: 36px;
+    }
+  
+    .hero-content p {
+      font-size: 16px;
+    }
+  
+    .call-now {
+      padding: 10px 50px;
+      font-size: 18px;
+      width: 100%; /* Full width for the button on mobile */
+    }
+  
+    .hero-image {
+      margin-top: 20px; /* Add margin to separate the image from the text */
+    }
+  
+    .hero-image img {
+      max-width: 100%;
+    }
+  }
+  
+
+
+
+
+  /* Services Section Container */
+  .services-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: #5686df;
+    padding: 50px 0;
+    flex-wrap: wrap; /* Allows the cards to wrap on smaller screens */
+    gap: 20px; /* Adds space between the cards */
+  }
+  
+  /* Service Card Styling */
+  .service-card {
+    background-color: #3168ce;
+    width: 390px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Icon Styling */
+  .icon {
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  
+  .service-stat-icon {
+    color: rgb(181, 181, 181);
+  }
+  
+  /* Heading and Paragraph Styling */
+  h3 {
+    color: #f5c518;
+    margin-bottom: 15px;
+    font-size: 24px;
+  }
+  
+  p {
+    color: #b0bec5;
+    font-size: 15px;
+    line-height: 2;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .services-container {
+      justify-content: center; /* Center the service cards */
+      padding: 30px 20px; /* Adjust padding */
+    }
+  
+    .service-card {
+      width: 100%; /* Make the cards full width on mobile */
+      margin-bottom: 20px; /* Add space between stacked cards */
+    }
+  
+    h3 {
+      font-size: 22px;
+    }
+  
+    p {
+      font-size: 14px;
+    }
+  }
+  
+  /* Extra small screen (mobile) styling */
+  @media (max-width: 480px) {
+    .service-card {
+      padding: 20px;
+    }
+  
+    h3 {
+      font-size: 20px;
+    }
+  
+    p {
+      font-size: 13px;
+    }
+  }
+  
+   
+
+
+   /* Pool Water Section */
+.poolwater {
+  display: flex;
+  flex-direction: column; /* Stack image, heading, and text vertically */
+  align-items: center;
+  padding: 80px 50px;
+}
+
+/* Delivery Section */
+.delivery-section {
+  display: flex;
+  flex-direction: column; /* Stack the image, heading, and text in a column */
+  justify-content: center;
+  align-items: center;
+  background-color: #4c80e1;
+}
+
+/* Image Section */
+.image-section {
+  margin-bottom: 20px; /* Add some spacing between the image and text */
+  width: 100%;
+  text-align: center;
+}
+
+.image-section img {
+  max-width: 100%;
+  border: none;
+  height: 500px;
+  object-fit: cover; /* Ensure the image covers the available space */
+}
+
+/* Text Section */
+.text-section {
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.text-section h2 {
+  color: #f5c518;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.text-section p {
+  color: #b0bec5;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+/* Responsive Design for Tablets and Mobile */
+
+/* For devices up to 1024px (tablets) */
+@media (max-width: 1024px) {
+  .delivery-section {
+    padding: 50px 30px;
+  }
+
+  .image-section img {
+    height: 400px; /* Reduce image height for smaller devices */
+  }
+
+  .text-section {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .text-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .text-section p {
+    font-size: 1.1rem;
+  }
+}
+
+/* For devices up to 768px (mobile phones) */
+@media (max-width: 768px) {
+  .delivery-section {
+    padding: 30px 20px;
+  }
+
+  .image-section img {
+    height: 300px; /* Further reduce image height */
+  }
+
+  .text-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .text-section p {
+    font-size: 1rem;
+  }
+}
+
+/* For devices up to 480px (small mobile screens) */
+@media (max-width: 480px) {
+  .poolwater {
+    padding: 20px 10px; /* Reduce overall padding */
+  }
+
+  .delivery-section {
+    padding: 20px 10px;
+  }
+
+  .image-section img {
+    height: 250px; /* Smaller image for very small screens */
+  }
+
+  .text-section h2 {
+    font-size: 1.4rem;
+  }
+
+  .text-section p {
+    font-size: 0.95rem;
+  }
+}
+
+
+/* 
+.info-card-container {
+    display: flex;
+    justify-content: center;
+    background-color: #0f1a30; 
+    padding: 100px;
+   
+  }
+  
+  .info-details {
+   
+    width: 50%;
+    padding: 70px 0px;
+  }
+  
+  .info-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+   
+    border-right: 1px solid #16405c;
+    border-bottom: 1px solid #0c314a;
+    margin: 0px 100px;
+  }
+  .info-text{
+  
+    margin-bottom: 50px;
+  }
+  
+  .info-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  .info-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .icon-container {
+    width: 60px;
+    height: 60px;
+   
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    font-size: 1.8rem;
+    color: #0fffc4; 
+  }
+  
+  
+  .image-container {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .info-image {
+    width: 100%;
+  
+  }
+  
+   */
+
+
+   /* Container for the entire component */
+   .info-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3770db; /* Dark blue background */
+    padding: 100px;
+    flex-wrap: wrap; /* Allows the items to wrap on smaller screens */
+  }
+  
+  /* Left section for info details */
+  .info-details {
+    width: 50%;
+    padding: 70px 30px; /* Adjusted for padding on smaller screens */
+  }
+  
+  /* Each info item (heading, text, and icon) */
+  .info-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    border-right: 1px solid #16405c;
+    border-bottom: 1px solid #0c314a;
+    margin: 0px 50px; /* Reduced margin for smaller screens */
+  }
+  
+  .info-text {
+    margin-bottom: 50px;
+  }
+  
+  .info-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  .info-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* Icon container styles */
+  .icon-container {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    font-size: 1.8rem;
+    color: #0fffc4; /* Light blue for icons */
+  }
+  
+  /* Right section for image */
+  .image-container {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .info-image {
+    width: 100%;
+  }
+  
+  /* Responsive Design */
+  
+  /* For tablets and small desktops */
+  @media (max-width: 1024px) {
+    .info-card-container {
+      padding: 50px;
+    }
+  
+    .info-details {
+      width: 100%; /* Info and image sections take full width */
+      padding: 50px 20px;
+    }
+  
+    .image-container {
+      width: 100%;
+      margin-top: 30px; /* Image moves below the text */
+    }
+  
+    .info-item {
+      flex-direction: column; /* Stack the icon, heading, and text vertically */
+      border-right: none; /* Remove the right border */
+      border-bottom: 1px solid #3770db;
+      margin: 0 20px;
+      padding-bottom: 20px;
+    }
+  
+    .icon-container {
+      margin-bottom: 15px;
+    }
+  }
+  
+  /* For mobile devices */
+  @media (max-width: 768px) {
+    .info-card-container {
+      padding: 30px;
+    }
+  
+    .info-details {
+      padding: 30px 15px;
+    }
+  
+    .info-item {
+      margin: 0 10px;
+      margin-bottom: 40px;
+    }
+  
+    .info-text h3 {
+      font-size: 1.3rem;
+    }
+  
+    .info-text p {
+      font-size: 0.9rem;
+    }
+  
+    .icon-container {
+      width: 50px;
+      height: 50px;
+      font-size: 1.5rem;
+    }
+  
+    .image-container {
+      margin-top: 20px;
+      padding: 90px;
+    }
+  }
+  
+  /* For small mobile screens */
+  @media (max-width: 480px) {
+    .info-card-container {
+      padding: 20px;
+    }
+  
+    .info-details {
+      padding: 20px 10px;
+    }
+  
+    .info-item {
+      margin: 0 5px;
+      margin-bottom: 30px;
+    }
+  
+    .info-text h3 {
+      font-size: 1.2rem;
+    }
+  
+    .info-text p {
+      font-size: 0.85rem;
+    }
+  
+    .icon-container {
+      width: 45px;
+      height: 45px;
+      font-size: 1.3rem;
+    }
+  
+    .image-container {
+      margin-top: 15px;
+      padding: 40px;
+    }
+  }
+  
+
+
+
+   
+
+
+
+   .tanker-page-container {
+    background-color: #487bda; /* Dark blue background */
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+/* Header section */
+.tanker-page-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.tanker-page-header p {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+/* Card container for flex layout */
+.tanker-card-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 0px 220px;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+/* Individual tanker card */
+.tanker-card {
+    background-color: #1f62df; /* Match background with page */
+    border: 1px solid #1d3557;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 300px;
+    height: 450px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.callcard {
+    border-radius: 20px;
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 5px 20px;
+    color: rgb(84, 84, 84);
+    background-color: #f5c518;
+    text-decoration: none;
+}
+
+.tanker-card:hover {
+    transform: scale(1.05); /* Slight scale on hover */
+}
+
+/* Image styling */
+.tanker-image {
+    width: 100%;
+    height: 240px;
+    border-bottom: 2px solid #1d3557;
+}
+
+/* Card content */
+.tanker-card-content {
+    padding: 5px 20px;
+    text-align: left;
+}
+
+.tanker-card-content h3 {
+    font-size: 22px;
+    margin-bottom: 0px;
+}
+
+.tanker-card-content p {
+    font-size: 13px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Call Now button */
+.call-now-btn {
+    background-color: #f9c72f;
+    color: #0f1a30;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+  }
+ 
+.call-now-btn:hover {
+    background-color: #f1b022;
+}
+
+/* Responsive Design */
+
+/* For large desktops (above 1200px) */
+@media (min-width: 1200px) {
+    .tanker-card-container {
+        padding: 0px 220px; /* Reduce padding for larger screens */
+    }
+
+    .tanker-card {
+        width: 400px; /* Card width for PC */
+    }
+}
+
+/* For tablets and small desktops (below 1024px) */
+@media (max-width: 1024px) {
+    .tanker-page-header h2 {
+        font-size: 2rem; /* Adjust heading size */
+    }
+
+    .tanker-card-container {
+        padding: 0px 50px; /* Reduce side padding */
+    }
+
+    .tanker-card {
+        width: 100%; /* Cards take full width */
+    }
+}
+
+/* For mobile devices (below 768px) */
+@media (max-width: 768px) {
+    .tanker-page-container {
+        padding: 20px;
+    }
+
+    .tanker-page-header h2 {
+        font-size: 1.8rem; /* Smaller font size for mobile */
+    }
+
+    .tanker-page-header p {
+        font-size: 1rem; /* Smaller text for mobile */
+    }
+
+    .tanker-card-container {
+        gap: 15px; /* Reduce gap between cards */
+        padding: 0px 20px; /* Reduce padding */
+        flex-direction: column; /* Stack cards vertically on mobile */
+    }
+
+    .tanker-card {
+        width: 100%; /* Cards take full width on mobile */
+        height: auto; /* Auto height for mobile */
+    }
+
+    .tanker-card-content h3 {
+        font-size: 1.5rem; /* Smaller heading */
+    }
+
+    .tanker-card-content p {
+        font-size: 12px; /* Adjust paragraph size */
+    }
+
+    .call-now-btn {
+        font-size: 12px; /* Smaller button text */
+        padding: 8px 16px; /* Smaller button padding */
+        
+    }
+}
+
+/* For small mobile screens (below 480px) */
+@media (max-width: 480px) {
+    .tanker-page-header h2 {
+        margin-top: 30px;
+        font-size: 1.5rem;
+    }
+
+    .tanker-page-header p {
+        font-size: 0.9rem;
+    }
+
+    .tanker-card-container {
+        padding: 0px 10px; /* Minimal padding for small screens */
+    }
+
+    .tanker-card {
+        width: 100%; /* Full width on small screens */
+        height: auto; /* Auto height for small screens */
+    }
+
+    .tanker-card-content h3 {
+        margin-top: 10px;
+        font-size: 1.3rem;
+        margin-bottom: 5px;
+    }
+
+    .tanker-card-content p {
+        font-size: 13px;
+    }
+
+    .call-now-btn {
+        font-size: 10px;
+        padding: 6px 12px;
+        
+    }
+}

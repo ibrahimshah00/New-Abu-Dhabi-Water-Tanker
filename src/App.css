@@ -1,0 +1,420 @@
+/* Stats counter */
+.stats-counter {
+    display: flex;
+    justify-content: center; /* Use space between for larger screens */
+    flex-wrap: wrap; /* Allow wrapping */
+    background: linear-gradient(135deg, #5686df 50%, #3582ca 100%);
+    color: white;
+    padding: 20px;
+    
+  }
+  
+  /* Stat item */
+  .stat-item {
+    text-align: center;
+    color: #ffc107; /* Gold color */
+    font-size: 24px; /* Base font size for desktop */
+   
+    padding: 15px; /* Padding around stat items */
+    transition: transform 0.3s; /* Smooth hover effect */
+    border-radius: 8px; /* Rounded corners */
+   
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Increased box shadow for depth */
+    margin: 10px; /* Margin around stat items for spacing */  
+  }
+  
+  /* Hover effect for stat items */
+  .stat-item:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  
+  /* Stat item paragraph */
+  .stat-item p {
+    margin-top: 5px;
+    font-size: 14px; /* Consistent font size for description */
+  }
+  
+  /* First stat style */
+  .firststat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    color: #ffc107;
+  }
+  
+  /* Stat icon */
+  .stat-icon {
+    height: 35px; /* Consistent height for icons */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .stats-counter {
+      flex-direction: column; /* Stack items in a column */
+      align-items: center; /* Center items */
+    }
+  
+    .stat-item {
+      flex: 1 1 80%; /* Make items take full width on mobile */
+      margin: 10px 0; /* Vertical margin between items */
+    }
+  
+    .stat-item p {
+      font-size: 12px; /* Smaller font size for mobile */
+    }
+  }
+  
+
+
+  
+  /* Footer */
+  .footer {
+    display: flex;
+    flex-direction: column; /* Stack footer items */
+    align-items: center; /* Center footer content */
+    background-color: #215ece; /* Dark background */
+    color: white;
+    padding: 20px 40px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    border-top: 0.5px solid rgb(121, 117, 117);
+  }
+  
+  .footer-left {
+    color: #ccc; /* Light gray text */
+    margin-bottom: 10px; /* Space above the footer */
+  }
+  
+  .footer-left a {
+    color: #ffc107; /* Gold color for the link */
+    text-decoration: none;
+  }
+  
+  .footer-right {
+    display: flex;
+    gap: 20px; /* Space between the links */
+  }
+  
+  .footer-right a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .footer-right a:hover {
+    color: #ffc107; /* Gold color on hover */
+  }
+  
+  .stat-item a {
+    text-decoration: none;
+    color: #ffc107;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .reviews-section {
+      padding: 80px 10px; /* Further reduced padding */
+    }
+  
+    .heading {
+      font-size: 26px; /* Smaller heading on small screens */
+    }
+  
+    .description {
+      font-size: 16px; /* Further reduced font size */
+      margin-bottom: 80px; /* Adjust bottom margin */
+    }
+  
+    .review-heading {
+      font-size: 26px; /* Smaller review heading */
+    }
+  
+    .subheading {
+      font-size: 16px; /* Smaller subheading */
+      margin-bottom: 40px; /* Adjust bottom margin */
+    }
+  
+    .reviews-container {
+      flex-direction: column; /* Stack reviews vertically */
+      align-items: center; /* Center align cards */
+    }
+  
+    .review-card {
+      width: 100%; /* Full width for cards */
+      max-width: 350px; /* Max width for larger screens */
+      padding: 15px; /* Less padding */
+    }
+  }
+  
+
+
+  
+
+/* General layout and typography */
+.reviews-section {
+    padding: 100px 20px; /* Adjusted for mobile */
+    background-color: #4679da; /* Match the background color */
+    color: #fff;
+    text-align: center;
+  }
+  
+  .heading {
+    font-size: 28px; /* Smaller heading for mobile */
+    color: #f9b03b; /* Bright gold/yellow color */
+  }
+  
+  .description {
+    font-size: 16px; /* Smaller font size */
+    line-height: 1.6;
+    margin-top: 10px;
+    color: #c0d1e3; /* Softer white for the description */
+    max-width: 90%; /* Make it responsive */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px; /* Adjusted bottom margin */
+  }
+  
+  /* Reviews header styling */
+  .review-heading {
+    margin-top: 40px;
+    font-size: 24px; /* Smaller review heading */
+    color: #fff;
+  }
+  
+  .subheading {
+    font-size: 16px; /* Smaller subheading */
+    color: #a2bedc;
+    margin-bottom: 40px; /* Adjusted bottom margin */
+  }
+  
+  /* Review cards container */
+  .reviews-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row; /* Default to row for larger screens */
+    flex-wrap: wrap; /* Allow wrapping to new lines */
+    gap: 30px; /* Increased gap between cards for more spacing */
+  }
+  
+  /* Review card */
+  .review-card {
+    background-color: #3770db; /* Dark card background */
+    border-radius: 10px;
+    padding: 20px; /* Less padding */
+    width: 100%; /* Full width for mobile */
+    max-width: 350px; /* Limit the width for larger screens */
+    text-align: left;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hover effect for all cards */
+  .review-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .review-text {
+    font-size: 14px; /* Smaller review text */
+    color: #f4f4f4;
+    font-style: italic;
+    margin-bottom: 15px; /* Adjusted margin */
+    line-height: 1.5; /* Better line spacing */
+  }
+  
+  /* Reviewer info */
+  .reviewer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .review-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+  }
+  
+  .reviewer-info {
+    text-align: left;
+  }
+  
+  .reviewer-name {
+    font-size: 16px; /* Smaller reviewer name */
+    font-weight: bold;
+    color: #f9b03b; /* Match the heading color */
+  }
+  
+  .reviewer-location {
+    font-size: 14px; /* Smaller location text */
+    color: #a2bedc; /* Lighten the location text */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .reviews-container {
+        flex-direction: column; /* Stack reviews vertically on mobile */
+        align-items: center; /* Center items */
+    }
+  
+    .review-card {
+        width: 90%; /* Limit width for mobile */
+        margin-bottom: 20px; /* Spacing between cards */
+    }
+  }
+  
+    
+  
+
+   /* Default styles for larger screens */
+.accordion-wrapper {
+    display: flex;
+    justify-content: space-between; /* Ensures the accordion and image are side by side */
+    align-items: flex-start; /* Aligns the top of the accordion and image */
+    padding-top: 50px;
+    padding-right: 170px;
+    padding-left: 180px;
+    background-color: #3770db;
+  }
+  
+  .accordion-container {
+    margin-top: 60px;
+    border: 1px solid rgb(108, 101, 101);
+    width: 600px;
+    max-width: 70%; /* Adjusts width for the accordion container */
+    margin-right: 40px; /* Space between accordion and the image */
+  }
+  
+  .accordion-item {
+    background-color: #0a3045;
+    margin-bottom: 1px;
+    border-radius: 1px;
+  }
+  
+  .accordion-title {
+    height: 80px;
+    color: #fff;
+    padding-left: 15px;
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+    cursor: pointer;
+    background-color: #133c5c;
+    border: 1px solid #00090f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .accordion-title:hover {
+    background-color: #1a476b;
+  }
+  
+  .icon {
+    font-size: 24px;
+    margin-top: 8px;
+  }
+  
+  .accordion-content {
+    background-color: #112b3d;
+    color: #cce0f0;
+    font-family: 'Arial', sans-serif;
+    font-size: 15px;
+  }
+  
+  .hexa {
+    border-left: 1px solid rgb(71, 71, 71);
+    width: 500px;
+    position: relative; 
+    margin-bottom: 50px;
+  }
+  
+  .hexagon-image {
+    width: 100%;
+  }
+  
+  .hexa img {
+    padding-left: 50px;
+  }
+  
+  /* Responsive adjustments for medium-sized devices (tablets) */
+  @media (max-width: 1024px) {
+    .accordion-wrapper {
+      flex-direction: column; /* Stack accordion and image vertically */
+      padding: 40px 60px; /* Reduce padding */
+      align-items: center; /* Center the content */
+    }
+  
+    .accordion-container {
+      width: 100%; /* Accordion takes full width */
+      max-width: 100%; /* No limit on max width */
+      margin-right: 0; /* No margin between accordion and image */
+      margin-bottom: 30px; /* Add space below accordion */
+    }
+  
+    .hexa {
+      width: 100%; /* Image container takes full width */
+    }
+  
+    .hexa img {
+      padding-left: 0; /* Reset padding for smaller devices */
+    }
+  }
+  
+  /* Responsive adjustments for small-sized devices (mobile phones) */
+  @media (max-width: 768px) {
+    .accordion-wrapper {
+      padding: 20px; /* Further reduce padding */
+    }
+  
+    .accordion-title {
+      font-size: 16px; /* Reduce title font size */
+      height: 60px; /* Reduce height of the accordion title */
+    }
+  
+    .icon {
+      font-size: 20px; /* Reduce icon size */
+    }
+  
+    .accordion-content {
+      font-size: 14px; /* Reduce font size for content */
+    }
+  
+    .hexa {
+      width: 100%; /* Image container remains full width */
+      margin-bottom: 20px;
+    }
+  
+    .hexa img {
+      padding-left: 0; /* No padding on small screens */
+    }
+  }
+  
+  
+  
+  .whatsapp-float {
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+    
+  }
+  
+  .whatsapp-button {
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    padding-top: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease-in-out;
+  }
+  
+  .whatsapp-button:hover {
+    transform: scale(1.1);
+  }
+  

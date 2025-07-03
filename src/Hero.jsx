@@ -8,7 +8,7 @@ function Hero() {
     <>
     <section className="hero">
       <div className="hero-content">
-        <h1>Abu Dhabi Water Tanker</h1>
+        <h1>Star Shapez General Transport L.L.C</h1>
         <p>We Deliver Sweet Water For Swimming Pools, Laundry, Villa, Hotels and Salt Water for Construction site. 1000GL to 15000GL Water Tanker</p>
         <a href="tel:+971 524411758" className="call-now">Call Now</a>
       </div>

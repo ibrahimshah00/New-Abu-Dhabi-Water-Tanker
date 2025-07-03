@@ -5,7 +5,9 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-left">
         <p>
-          Copyright © 2024 <a href="/">Abu Dhabi Water Tanker</a>
+          
+      © 2025 <a href="/">Star Shapez General Transport L.L.C</a>. All rights reserved. Licensed and registered in Abu Dhabi, United Arab Emirates. 
+      
         </p>
       </div>
       <div className="footer-right">

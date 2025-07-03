@@ -29,7 +29,7 @@ function Navbar() {
         <li><a href="#reviews">Reviews</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#number">+971 524411758</a></li>
-        <li><a href="#email">ibrahimyt445@gmail.com </a></li>
+        <li><a href="#email"> info@abudhabiwatertanker.com  </a></li>
 
       </ul>
 

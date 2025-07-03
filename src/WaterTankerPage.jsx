@@ -14,7 +14,7 @@ const WaterTankerPage = () => {
   return (
     <div className="tanker-page-container">
       <div className="tanker-page-header">
-        <h2>More About Water Tanker Supply in Abu Dhabi</h2>
+        <h2>More About Star Shapez General Transport L.L.C</h2>
         <p>
           We offer door-to-door sweet water tanker delivery in Abu Dhabi, backed by 15 years of experience. Our services cater to swimming pools, laundries, villas, construction sites, and hotels. We provide water delivery capacities ranging from 1,000 to 5,000 gallons.
         </p>

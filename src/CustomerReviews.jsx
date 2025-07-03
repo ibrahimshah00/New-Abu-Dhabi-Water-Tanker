@@ -23,7 +23,7 @@ const reviews = [
   {
     name: 'Osman',
     location: 'Dubai, UAE',
-    review: `The Abu Dhabi water tanker service ensures quick and reliable delivery of clean water for swimming pools, making pool maintenance hassle-free. Their efficient service guarantees customer satisfaction!`,
+    review: `The Star Shapez General Transport L.L.C service ensures quick and reliable delivery of clean water for swimming pools, making pool maintenance hassle-free. Their efficient service guarantees customer satisfaction!`,
     avatar: r3,
   },
   {
@@ -45,7 +45,7 @@ const CustomerReviews = () => {
     <div className="reviews-section">
       {/* Section Header */}
       <div className="reviewheader">
-        <h1 className="heading">Abu Dhabi Water Tanker</h1>
+        <h1 className="heading">Star Shapez General Transport L.L.C</h1>
         <p className="description">
           We are a Fresh Water Delivery Service in Abu Dhabi, Dubai specializing in potable water tanker services. 
           Our deliveries cater to swimming pools, laundry facilities, villas, construction sites, and hotels. 
